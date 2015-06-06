@@ -38,7 +38,7 @@ import statistics.tools.DynamicArrayOfDouble;
 
 /**
  *
- * @author Asad
+ * @author Syed Asad Rahman <asad@ebi.ac.uk>
  */
 public class TestVS {
 
