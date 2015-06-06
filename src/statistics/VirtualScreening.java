@@ -63,6 +63,14 @@ public class VirtualScreening {
      * Good and Bad Metrics for the "Early Recognition" Problem.
      * J. Chem. Inf. Model. (2007) 47, 488-508.
      */
+
+    /**
+     * Function to culculate the Robust Initial Enhancement (RIE)
+     * @param alpha coefficient alpha
+     * @param decreasing TRUE if the compounds are ranked by decreasing score
+     * @return RIE, in the range from 0 to +Inf.
+     */
+    
     public double rie(double alpha, boolean decreasing) {
         if (scores.length != lables.length) {
             System.err.println("The number of scores must be equal to the number of labels.");
@@ -109,6 +117,14 @@ public class VirtualScreening {
      * Good and Bad Metrics for the "Early Recognition" Problem.
      * J. Chem. Inf. Model. (2007) 47, 488-508.
      */
+
+    /**
+     * Boltzmann-Enhanced Discrimination of ROC (BEDROC)
+     * @param alpha coefficient alpha
+     * @param decreasing TRUE if the compounds are ranked by decreasing score
+     * @return BEDROC, in the range from 0 to 1.
+     */
+    
     public double bedroc(double alpha, boolean decreasing) {
         if (scores.length != lables.length) {
             System.err.println("The number of scores must be equal to the number of labels.");
@@ -158,6 +174,14 @@ public class VirtualScreening {
      * Good and Bad Metrics for the "Early Recognition" Problem.
      * J. Chem. Inf. Model. (2007) 47, 488-508.
      */
+
+    /**
+     * Function to calculate the enrichment factor (EF)
+     * @param top threshold ratio of the false positives (when ROC analysis is performed on a top list)
+     * @param decreasing TRUE if the compounds are ranked by decreasing score
+     * @return EF, in the range from 0 to +Inf.
+     */
+    
     public double enrichment_factor(double top, boolean decreasing) {
         if (scores.length != lables.length) {
             System.err.println("The number of scores must be equal to the number of labels.");
@@ -214,6 +238,14 @@ public class VirtualScreening {
      * Ref.: Tom Fawcett, An introduction to ROC analysis. 
      * Pattern Recognition Letters 27, 861-874 (2006)
      */
+
+    /**
+     * Function to calculate the Area Under the ROC Curve (AUC)
+     * @param top threshold ratio of the false positives (when ROC analysis is performed on a top list)
+     * @param decreasing TRUE if the compounds are ranked by decreasing score
+     * @return AUC, in the range from 0 to 1.
+     */
+    
     public double auc(double top, boolean decreasing) {
         if (scores.length != lables.length) {
             System.err.println("The number of scores must be equal to the number of labels.");
@@ -270,6 +302,14 @@ public class VirtualScreening {
      * Ref.: Tom Fawcett, An introduction to ROC analysis. 
      * Pattern Recognition Letters 27, 861-874 (2006)
      */
+
+    /**
+     * Function to calculate the Area Under the Accumulation Curve (AUAC)
+     * @param top threshold ratio of the false positives (when ROC analysis is performed on a top list)
+     * @param decreasing TRUE if the compounds are ranked by decreasing score
+     * @return AUAC, in the range from 0 to 1.
+     */
+    
     public double auac(double top, boolean decreasing) {
         if (scores.length != lables.length) {
             System.err.println("The number of scores must be equal to the number of labels.");
