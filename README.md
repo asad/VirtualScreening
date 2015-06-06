@@ -1,4 +1,4 @@
-# VirtualScreening: 
+# VirtualScreening
 
 Title: Enrichment assessment of virtual screening approaches
 
