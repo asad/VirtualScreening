@@ -435,7 +435,7 @@ public class VirtualScreening {
     }
 
     /*
-     Returns the index of scores in desceding order
+     Returns the index of scores in ascending order
      */
     int[] getIncreasingOdering(double[] scores) {
         NaturalRanking naturalRanking = new NaturalRanking(NaNStrategy.FIXED,
