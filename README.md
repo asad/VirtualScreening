@@ -1,5 +1,5 @@
-# VirtualScreening
-Java code for 'enrichvs' package in R
+# VirtualScreening: Enrichment assessment of virtual screening approaches
+(Inspiration: This is Java code for 'enrichvs' package in R)
 
 Performs
 a) auc
