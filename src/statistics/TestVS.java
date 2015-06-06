@@ -48,7 +48,7 @@ public class TestVS {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        File file = new File("data/Ranking_Energy_Decoy.csv");
+        File file = new File("data/dud_egfr.csv");
         Locale locale = new Locale("en", "UK");
         String pattern = "#.###";
 
