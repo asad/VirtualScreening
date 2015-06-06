@@ -16,6 +16,12 @@ d) Boltzmann-Enhanced Discrimination of ROC (BEDROC)
 
 e) Enrichment Factor (EF)
 
+#####Test case
+
+Scores and labels for EGFR ligands/docoys from DUD dataset.
+
+Ligands and decoys for Epidermal Growth Factor Receptor (EGFR) were scored by DOCK programs (Huang et al., 2006). 
+
 The test dataset is taken from http://dud.docking.org/r2/
 
 A list with 88888 observations on the following 2 variables.
