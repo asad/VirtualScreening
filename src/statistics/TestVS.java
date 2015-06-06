@@ -23,7 +23,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-package test;
+package statistics;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -35,7 +35,6 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import statistics.VirtualScreening;
 import utility.DynamicArrayOfBoolean;
 import utility.DynamicArrayOfDouble;
 
