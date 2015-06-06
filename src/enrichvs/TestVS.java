@@ -78,9 +78,9 @@ public class TestVS {
                 index++;
             }
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(EnrichmentAssessment.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestVS.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(EnrichmentAssessment.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestVS.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         double[] energies = energy.getArray();
