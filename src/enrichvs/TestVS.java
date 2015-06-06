@@ -78,9 +78,9 @@ public class TestVS {
                 index++;
             }
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(VirtualScreening.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EnrichmentAssessment.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(VirtualScreening.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EnrichmentAssessment.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         double[] energies = energy.getArray();
@@ -88,7 +88,7 @@ public class TestVS {
 
         System.out.println("Number of data points: " + index);
 
-        VirtualScreening virtualScreening = new VirtualScreening(energies, boolArrays);
+        EnrichmentAssessment virtualScreening = new EnrichmentAssessment(energies, boolArrays);
         // Expected Bedroc 0.591155 (decreasing=FALSE), 0.3848914 (decreasing=TRUE)
         System.out.println("Virtual Screening BEDROC: " + decimalFormat.format(virtualScreening.bedroc(0.20d, false)));
         // Expected Enrichment_factor 3.108108 (decreasing=FALSE), 1.891892 (decreasing=TRUE)

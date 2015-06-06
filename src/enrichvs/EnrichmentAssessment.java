@@ -38,9 +38,9 @@ import org.apache.commons.math3.stat.ranking.TiesStrategy;
  *
  * @author Syed Asad Rahman <asad@ebi.ac.uk>
  */
-public class VirtualScreening {
+public class EnrichmentAssessment {
 
-    private static final Logger LOG = Logger.getLogger(VirtualScreening.class.getName());
+    private static final Logger LOG = Logger.getLogger(EnrichmentAssessment.class.getName());
     private final double alpha = 0.20d;
     private final double top = 0.05d;
     private final double[] scores;
@@ -52,7 +52,7 @@ public class VirtualScreening {
      * @param scores {-99.9,90.0,-98.0}
      * @param lables {true,false,true....}
      */
-    public VirtualScreening(double[] scores, boolean[] lables) {
+    public EnrichmentAssessment(double[] scores, boolean[] lables) {
         this.scores = scores;
         this.lables = lables;
     }
