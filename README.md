@@ -2,7 +2,7 @@
 
 Title: Enrichment assessment of virtual screening approaches
 
-(Inspiration: This is Java code for 'enrichvs' package in R)
+(Inspiration: This is a Java code for 'enrichvs' package in R)
 
 Performs:
 
